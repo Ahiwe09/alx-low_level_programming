@@ -4,6 +4,10 @@
 
 /**
  * main - Entry point
+ *
+ * Description: This program will assign a random number to the 
+ * to the variable n each time it is executed.
+ *
  * REturn: Always 0
  */
 int main(void)
@@ -17,6 +21,6 @@ int main(void)
 	else if (n == 0)
 		printf("%d is zero\n", n);
 	else
-		printf("%d is nagative\n", n);
+		printf("%d is negative\n", n);
 	return (0);
 }
