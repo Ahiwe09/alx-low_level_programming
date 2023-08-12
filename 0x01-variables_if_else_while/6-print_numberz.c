@@ -3,7 +3,7 @@
  * main - Entry point of the program
  *
  * Description: This program prints all single digit
- * numbers of base 10 starting from 0.
+ * numbers of base.
  *
  * Return: Always return 0
  */
