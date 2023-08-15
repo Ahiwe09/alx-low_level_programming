@@ -2,12 +2,12 @@
 /**
  * _isalpha - Checks for alphabetic order
  *
- * @i: alpabet to check for
+ * @c: alpabet to check for
  *
  * Return: 1 if c is a letter, 0 otherwise
  */
-int _isalpha(int i)
+int _isalpha(int c)
 {
-	return ((i >= 'a' &&  <= 'z') || (i >= 'A' && i <= 'Z'));
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 
 }
