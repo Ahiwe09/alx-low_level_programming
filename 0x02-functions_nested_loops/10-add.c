@@ -1,18 +1,11 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * Write a function that adds two integers and returns the result.
+ *add - sum of two number
+ *@a:first
+ *@b:second
+ *Return: 0
  */
 int add(int a, int b)
 {
-
-	return (a + b);
-
-}
-int main(void)
-{
-	int n;
-
-	n = add(89, 9);
-	printf("%d\n", n);
-	return (0);
+return (a + b);
 }
