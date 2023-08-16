@@ -1,16 +1,18 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * custom_add - Adds two integers and returns the sum.
- *
- * @a: First integer to be added.
- * @b: Second integer to be added.
- *
- * Return: The sum of a and b.
+ * Write a function that adds two integers and returns the result.
  */
-int custom_add(int a, int b)
+int add(int a, int b)
 {
-	int a + b;
-	return sum;
-	
-}
 
+	return (a + b);
+
+}
+int main(void)
+{
+	int n;
+
+	n = add(89, 9);
+	printf("%d\n", n);
+	return (0);
+}
