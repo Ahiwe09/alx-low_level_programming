@@ -4,26 +4,25 @@
  * triangle, followed by a new line
  * @size: The size of a triangle.
  */
-
-void print_traingle(int size)
+void print_triangle(int size)
 {
 	int star, index;
 
 	if (size > 0)
 	{
-		for (star = 1; <= Size; star++)
+		for (star = 1; star <= size; star++)
 		{
 			for (index = size - star; index > 0; index--)
 			{
 				_putchar(' ');
 			}
-			for (index = 0; index < star; index++)
+			if (star == size)
 			{
 				_putchar('#');
 			}
 			if (star == size)
 			{
-
+				continue;
 			}
 			_putchar('\n');
 		}
