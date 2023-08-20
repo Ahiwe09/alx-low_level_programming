@@ -12,23 +12,23 @@ int main(void)
 
 	for (num = 1; num <= 100; num++)
 	{
-	if ((num % 3) == 0 && (num % 5) == 0)
-		printf("FIZZBUZZ");
+		if ((num % 3) == 0 && (num % 5) == 0)
+			printf("FIZZBUZZ");
 
-	else if ((num % 3) == 0)
-		printf("FIZZ");
+		else if ((num % 3) == 0)
+			printf("FIZZ");
 
-	else if ((num % 5) == 0)
-		printf("BUZZ");
-	else
-		printf("%d", num);
+		else if ((num % 5) == 0)
+			printf("BUZZ");
+		else
+			printf("%d", num);
 
-	if (num == 100)
-		continue;
-	printf(" ");
-  }
+		if (num == 100)
+			continue;
+		printf(" ");
+	}
 
-  printf("\n");
+	printf("\n");
 
-  return (0);
+	return (0);
 }
