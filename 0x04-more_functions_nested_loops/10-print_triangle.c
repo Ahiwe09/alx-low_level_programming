@@ -16,7 +16,7 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 			}
-			if (star == size)
+			for (index = 0; index < star; index++)
 			{
 				_putchar('#');
 			}
@@ -25,6 +25,7 @@ void print_triangle(int size)
 				continue;
 			}
 			_putchar('\n');
+				continue;
 		}
 	}
 
