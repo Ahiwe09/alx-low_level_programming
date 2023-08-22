@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * my_puts_half - Prints half of a string.
+ * puts_half - Prints half of a string.
  * @str: The input string.
  *
  * Description: If the length is odd, n = (length - 1) / 2.
  */
-void my_puts_half(char *str)
+void puts_half(char *str)
 {
 	int a, n, len;
 
