@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * puts2 - the  function that prints every other
  * character of a string, starting with the first
@@ -19,7 +19,7 @@ void puts2(char *str)
 		len++;
 	}
 	x = len - 1;
-	for (o = 0 ; o <= x ; o++)
+	for (o = 0; o <= x ; o++)
 	{
 		if (o % 2 == 0)
 	{
