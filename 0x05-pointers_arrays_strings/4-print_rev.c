@@ -9,7 +9,7 @@ void print_rev(char *s)
 {
 	int leni = 0;
 
-	int 0;
+	int i;
 
 	while (*s != '\0')
 	{
@@ -17,7 +17,7 @@ void print_rev(char *s)
 		s++;
 	}
 	s--;
-	for (i = len; i > 0; i--)
+	for (i = leni; i > 0; i--)
 	{
 		_putchar(*s);
 		s--;
