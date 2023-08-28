@@ -4,7 +4,7 @@
  * @s: Pointer to the input string
  * @accept: Pointer to the characters to be matched
  *
- *  Return: Always 0.
+ *  Return: Always 0
  */
 unsigned int _strspn(char *s, char *accept);
 {
