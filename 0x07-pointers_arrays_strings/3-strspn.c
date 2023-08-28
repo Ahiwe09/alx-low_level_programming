@@ -6,24 +6,24 @@
  *
  *  Return: Always 0
  */
-unsigned int _strspn(char *s, char *accept);
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int n = 0;
-	int c;
+	int r;
 
 	while (*s)
 	{
-		for (c = 0; accept[c]; c = c + 1)
+		for (r = 0; accept[r]; r++)
 		{
-			if (*s == accept[c])
+			if (*s == accept[r])
 			{
-				n = n + 1;
+				n++;
 				break;
 			}
-			else if (accept[c + 1] == '\0')
+			else if (accept[r + 1] == '\0')
 				return (n);
 		}
-		s = s + 1;
+		s++;
 	}
 	return (n);
 }
