@@ -4,22 +4,23 @@
  * @haystack: Pointer to the input string
  * @needle: Pointer to the substring to be located
  *
- * Return: Always 0
+ * Return: Always 0.
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *h = haystack;
-	char *n = needle;
-
-	while (*n && *h == *n)
+	for (; *haystack != '\0'; haystack++)
 	{
-		h++;
-		n++;
-	}
+		char *l = haystack;
+		char *p = needle;
 
-	if (!*n)
-	{
-		return (haystack);
+		while (*l == *p && *p != '\0')
+		{
+			l++;
+			p++;
+		}
+
+		if (*p == '\0')
+			return (haystack);
 	}
 
 	return (0);
