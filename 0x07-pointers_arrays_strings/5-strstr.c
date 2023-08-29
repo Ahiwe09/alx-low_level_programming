@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strstr - Locate the first occurrence of a substring in a string
+ * _strstr - Locate the first occurrence of a substring in a string
  * @haystack: Pointer to the input string
  * @needle: Pointer to the substring to be located
  *
