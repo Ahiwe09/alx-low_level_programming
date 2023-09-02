@@ -13,10 +13,10 @@ int main(int argc, char *argv[])
 {
 	int a;
 	int b;
-	int c;
+	int add;
 
 	(void)argv;
-	c = 0;
+	add = 0;
 	if (argc > 1)
 	{
 		for (a = 1; a < argc; a++)
@@ -29,9 +29,9 @@ int main(int argc, char *argv[])
 					return (1);
 				}
 			}
-			c += atoi(argv[b]);
+			add += atoi(argv[b]);
 		}
 	}
-	printf("%d\n", c);
+	printf("%d\n", add);
 	return (0);
 }
