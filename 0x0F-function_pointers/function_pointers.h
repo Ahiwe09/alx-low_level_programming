@@ -1,6 +1,6 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
-
+#include "3-calc.h"
 #include <stddef.h>
 #include <stdlib.h>
 
