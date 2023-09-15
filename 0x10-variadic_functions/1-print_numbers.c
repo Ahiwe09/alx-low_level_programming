@@ -7,7 +7,7 @@
  * @n: The number of integers to print.
  * @...: The integers to be printed
  */
-void print_numbers(const char separator, const unsigned int n, ...)
+void print_numbers(const char separator, const unsigned int n, ...);
 {
 	va_list nums;
 	unsigned int index = 0;
