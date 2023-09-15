@@ -7,26 +7,28 @@
  * @n: The number of integers to print.
  * @...: The integers to be printed
  */
-void print_numbers(const char separator, const unsigned int n, ...);
-{
-	va_list nums;
-	unsigned int index = 0;
-
-	va_start(nums, n);
-
-	while (index < n)
+void print_numbers(const char *separator, const unsigned int n, ...)
 	{
-		int num = va_arg(nums, int);
+		va_list nums;
+		unsigned int index;
 
-		printf("%d", num);
 
-		if (index != (n - 1))
-			putchar(separator);
+		va_start(nums, n);
 
-		index++;
+
+		for (index = 0; index < n; index++)
+		{
+			printf("%d", va_arg(nums, int));
+
+
+			if (index != (n - 1) && separator != NULL)
+				printf("%s", separator);
+		}
+
+
+		printf("\n");
+
+
+		va_end(nums);
 	}
 
-	printf("\n");
-
-	va_end(nums);
-}
