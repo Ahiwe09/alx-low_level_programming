@@ -21,9 +21,11 @@ void close_elf(int elf);
  *
  * Description: If the file is not an ELF file - exit code 98.
  */
+void check_elf(unsigned char *e_ident);
 void check_elf(unsigned char *e_ident)
 {
 	int index;
+
 	for (index = 0; index < 4; index++)
 	{
 		if (e_ident[index] != 127 &&
@@ -45,6 +47,7 @@ void check_elf(unsigned char *e_ident)
 void print_magic(unsigned char *e_ident)
 {
 	int index;
+
 	printf("  Magic:   ");
 	for (index = 0; index < EI_NIDENT; index++)
 	{
@@ -98,6 +101,7 @@ void print_data(unsigned char *e_ident)
 	default:
 		printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 	}
+
 }
 /**
  * print_version - Prints the version of an ELF header.
@@ -164,6 +168,7 @@ void print_osabi(unsigned char *e_ident)
  * print_abi - Prints the ABI version of an ELF header.
  * @e_ident: A pointer to an array containing the ELF ABI version.
  */
+void print_abi(unsigned char *e_ident);
 void print_abi(unsigned char *e_ident)
 {
 	printf("  ABI Version:                       %d\n",
@@ -249,6 +254,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	Elf64_Ehdr *header;
 	int o, r;
+
 	o = open(argv[1], O_RDONLY);
 	if (o == -1)
 	{
